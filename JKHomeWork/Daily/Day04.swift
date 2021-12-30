@@ -18,3 +18,18 @@ import Foundation
  2、在刷题打卡登记表里登记，班班能核对到你们的打卡记录
  👉https://jinshuju.net/f/lLWx1u
  */
+
+
+
+func detectCycle(_ head: ListNode?) -> ListNode? {
+    var numList: [UnsafeMutableRawPointer] = []
+    var node = head
+    while node != nil {
+        if numList.contains(Unmanaged.passUnretained(node!).toOpaque()) {
+            return node
+        }
+        numList.append(Unmanaged.passUnretained(node!).toOpaque())
+        node = node?.next
+    }
+    return nil;
+}
