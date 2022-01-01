@@ -15,9 +15,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        mergeSortedArray()
-    
-        revertLinkNode()
+//        mergeSortedArray()
+//
+//        revertLinkNode()
+        
+//        validParentheses()
+        
+        reverseKGroup()
     }
 
     
@@ -28,6 +32,17 @@ class ViewController: UIViewController {
     
     func revertLinkNode() {
         let r = RevertLinkNode()
+        r.test()
+    }
+    
+    func validParentheses() {
+        let v = ValidParentheses()
+        let res = v.isValid("()")
+        print("validParentheses: \(res)")
+    }
+    
+    func reverseKGroup() {
+        let r = ReverseKGroup()
         r.test()
     }
 

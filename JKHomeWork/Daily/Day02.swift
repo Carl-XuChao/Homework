@@ -42,7 +42,7 @@ class RevertLinkNode {
         }
     }
 
-    /// 反转链表
+    ///方法一：  反转链表
     func reverseList(_ head: ListNode?) -> ListNode? {
         var newLinkList: ListNode?
         let head = head
@@ -58,11 +58,36 @@ class RevertLinkNode {
     
     
     
+    /*
+     nil->1->2->3->4->5->nil
+     nil<-1 2->3->4->5->nil
+     nil<-1<-2 3->4->5->nil
+     nil<-1<-2<-3 4->5->nil
+     nil<-1<-2<-3<-4 5->nil
+     nil<-1<-2<-3<-4<-5 nil
+     */
+    func reverseList1(_ head: ListNode?) -> ListNode? {
+        var preNode: ListNode? = nil
+        var curNode = head
+        while (curNode != nil) {
+            let nextNode = curNode?.next
+            curNode?.next = preNode
+            preNode = curNode
+            curNode = nextNode
+        }
+        return preNode
+    }
+    
+    
+    
     func test() {
         let a = createList(arr: [1,2,3,4,5])
         foreachList(node: a!)
         print("----------------------")
-        if let b = reverseList(a!) {
+//        if let b = reverseList(a!) {
+//            foreachList(node: b)
+//        }
+        if let b = reverseList1(a!) {
             foreachList(node: b)
         }
     }
