@@ -21,9 +21,16 @@ class ViewController: UIViewController {
         
 //        validParentheses()
         
-        reverseKGroup()
+//        reverseKGroup()
+        
+        mergeTwoLinkList()
     }
 
+    
+    func mergeTwoLinkList() {
+        let m = MergeTwoLinkList()
+        m.test()
+    }
     
     func mergeSortedArray() {
         let m = MergeSortedArray()

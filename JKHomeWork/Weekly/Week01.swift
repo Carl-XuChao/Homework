@@ -8,11 +8,14 @@
 import Foundation
 
 
-
+/* 66. 加一
+ https://leetcode-cn.com/problems/plus-one/
+ 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+ 最高位数字存放在数组的首位， 数组中每个元素只存储单个数字。
+ 你可以假设除了整数 0 之外，这个整数不会以零开头。
+ */
 class PlusOne {
-    /*
-     https://leetcode-cn.com/problems/plus-one/solution/liang-ci-dao-xu-zhong-jian-bian-li-chu-l-k79p/
-     */
+   
     func plusOne(_ digits: [Int]) -> [Int] {
         var resArr: [Int] = []
         // 倒序
@@ -64,42 +67,59 @@ class PlusOne {
 
 
 
-/*
- he
+/*  21. 合并两个有序链表
+ https://leetcode-cn.com/problems/merge-two-sorted-lists/
+ 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+ 输入：l1 = [1,2,4], l2 = [1,3,4]
+ 输出：[1,1,2,3,4,4]
  */
 class MergeTwoLinkList {
     
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
-        var l1 = list1
-        var l2 = list2
-        print("mergeTwoLists: \(l1!.val) -- \(l2!.val)")
+        var curNodeOne = list1
+        var curNodeTwo = list2
+        if (list1 == nil) {
+            return list2
+        }
+        if (list2 == nil) {
+            return list1
+        }
+        let head: ListNode? = ListNode()
+        head?.next = list1
+        var preNodeOne : ListNode? = nil
         // 把list2合并到list1上去
-        while l1 != nil {
-            print("mergeTwoLists: 11")
-            while l2 != nil {
-                if (l2!.val >= l1!.val) {
-                    print(l2!.val)
-                    let orginall2Next = l2?.next;
-                    l2?.next = l1?.next
-                    l1?.next = l2
-                    l1 = l2
-                    l2 = orginall2Next
-                    print("mergeTwoLists: 22")
+        while curNodeOne != nil {
+            while curNodeTwo != nil {
+                let curNodeTwoNext = curNodeTwo?.next
+                if (curNodeTwo!.val <= curNodeOne!.val) {
+                    // list2当前结点数据比list当前结点数据大时，将list2当前结点数据插入到list当前结点之前
+                    if preNodeOne == nil {
+                        // 没有前驱结点情况，插入作为头结点
+                        preNodeOne = curNodeTwo
+                        head?.next = preNodeOne
+                    }
+                    preNodeOne?.next = curNodeTwo
+                    curNodeTwo?.next = curNodeOne
+                    preNodeOne = curNodeTwo
+                    curNodeTwo = curNodeTwoNext
                 } else {
-                    print("mergeTwoLists: 33")
-                    break
+                    // 移动list1， 如果list1全部移动完， 则把list2的全部元素移进list1
+                    let curNodeOneNext = curNodeOne?.next
+                    if curNodeOneNext == nil {
+                        curNodeOne?.next = curNodeTwo
+                        return head?.next
+                    } else {
+                        preNodeOne = curNodeOne
+                        curNodeOne = curNodeOneNext
+                    }
                 }
             }
-            if (l2 == nil) {
-                print("mergeTwoLists: 44")
-                break
-            }
-            print("mergeTwoLists: 55")
-            l1 = l1!.next
+            curNodeOne = curNodeOne!.next
         }
         
-        return l1
+        return head?.next
     }
+    
 
     func creatNodeListWithArray(_ list: [Int]) -> ListNode {
         let head = ListNode()
@@ -121,8 +141,14 @@ class MergeTwoLinkList {
     }
      
     func test() {
-        let a = [1,2,4]
-        let b = [1,3,4]
+//        let a = [1,2,4]
+//        let b = [1,3,4]
+//        let a: [Int] = []
+//        let b = [0]
+//        let a = [2]
+//        let b = [1]
+        let a = [-9, 3]
+        let b = [5, 7]
         let list1 = creatNodeListWithArray(a).next
         let list2 = creatNodeListWithArray(b).next
         let l = mergeTwoLists(list1, list2)

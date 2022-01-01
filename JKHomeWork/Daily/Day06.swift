@@ -43,11 +43,15 @@ class ReverseKGroup {
             }
             tailNode = tailNode?.next
         }
+        // 分组反转
         let newHead = reverse(head: head, k: k)
         // 头结点反转之后移动到末尾， 指向下一个反转链表的头部进行连接
         head?.next = reverseKGroup(tailNode, k)
         return newHead
     }
+    
+    
+   
     
     // 反转链表
     func reverse(head: ListNode?, k: Int) -> ListNode? {
