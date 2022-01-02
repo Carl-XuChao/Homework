@@ -13,9 +13,9 @@ class MinStack {
     var list: [Int] = []
     
     var minList : [Int] = []
-
+    
     init() {
-
+        
     }
     
     func push(_ val: Int) {

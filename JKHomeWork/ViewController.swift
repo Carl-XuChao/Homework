@@ -7,29 +7,29 @@
 
 import UIKit
 
-
+//Xcode快捷键： https://www.cnblogs.com/jys509/p/4358950.html
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        mergeSortedArray()
-//
-//        revertLinkNode()
+        //        mergeSortedArray()
+        //
+        //        revertLinkNode()
         
-//        validParentheses()
+        //        validParentheses()
         
-//        reverseKGroup()
+        //        reverseKGroup()
         
-//        mergeTwoLinkList()
+        //        mergeTwoLinkList()
         
-//        myCircularDeque()
+        //        myCircularDeque()
         
         minStack()
     }
-
+    
     
     func mergeTwoLinkList() {
         let m = MergeTwoLinkList()

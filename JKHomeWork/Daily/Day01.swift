@@ -9,14 +9,14 @@ import SwiftUI
 
 /*
  【Day01】 今日打卡题目来啦
-
+ 
  🌸合并两个有序数组-88
  https://leetcode-cn.com/problems/merge-sorted-array/
  */
 
- class MergeSortedArray {
+class MergeSortedArray {
     
-   
+    
     /// 方法一
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         var nums1Index: Int =  m - 1
@@ -46,7 +46,7 @@ import SwiftUI
             i -= 1
         }
     }
-
+    
     // test case
     func test()  {
         var a: [Int] = [1,3,6,0,0,0]
@@ -54,8 +54,8 @@ import SwiftUI
         merge(&a, 3, b, b.count)
         print(a)
     }
-
-
+    
+    
     /// 方法二：  优化判断方法， 本质上没区别
     func merge1(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         var nums1Index: Int =  m - 1
@@ -76,8 +76,8 @@ import SwiftUI
             i -= 1
         }
     }
-
-
+    
+    
     // test case
     func test1()  {
         var a1: [Int] = [1,2,3,0,0,0]
@@ -85,7 +85,7 @@ import SwiftUI
         merge1(&a1, 3, b1, b1.count)
         print(a1)
     }
-
-
+    
+    
 }
 

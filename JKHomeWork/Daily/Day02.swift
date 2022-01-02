@@ -9,10 +9,10 @@ import Foundation
 
 /*
  【Day02】 今日打卡题目来啦
-
+ 
  🌸反转链表-206
  https://leetcode-cn.com/problems/reverse-linked-list/
-
+ 
  */
 
 class RevertLinkNode {
@@ -21,11 +21,11 @@ class RevertLinkNode {
     func createList(arr: [Int]) -> ListNode? {
         let link = ListNode()
         var head = link
-       arr.forEach { item in
-           let currentNode = ListNode(val: item, next: nil)
-           head.next = currentNode
-           head = currentNode
-       }
+        arr.forEach { item in
+            let currentNode = ListNode(val: item, next: nil)
+            head.next = currentNode
+            head = currentNode
+        }
         return link.next
     }
     
@@ -41,7 +41,7 @@ class RevertLinkNode {
             }
         }
     }
-
+    
     ///方法一：  反转链表
     func reverseList(_ head: ListNode?) -> ListNode? {
         var newLinkList: ListNode?
@@ -84,9 +84,9 @@ class RevertLinkNode {
         let a = createList(arr: [1,2,3,4,5])
         foreachList(node: a!)
         print("----------------------")
-//        if let b = reverseList(a!) {
-//            foreachList(node: b)
-//        }
+        //        if let b = reverseList(a!) {
+        //            foreachList(node: b)
+        //        }
         if let b = reverseList1(a!) {
             foreachList(node: b)
         }
