@@ -23,7 +23,9 @@ class ViewController: UIViewController {
         
 //        reverseKGroup()
         
-        mergeTwoLinkList()
+//        mergeTwoLinkList()
+        
+        myCircularDeque()
     }
 
     
@@ -51,6 +53,10 @@ class ViewController: UIViewController {
     func reverseKGroup() {
         let r = ReverseKGroup()
         r.test()
+    }
+    
+    func myCircularDeque() {
+        MyCircularDeque.test()
     }
 
 }
