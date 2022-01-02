@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9A65A66F2780754200A2096C /* Day05.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A66E2780754200A2096C /* Day05.swift */; };
 		9A65A67127807A8B00A2096C /* Day06.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A67027807A8B00A2096C /* Day06.swift */; };
+		9A65A6762781F5E000A2096C /* Lession01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A6752781F5E000A2096C /* Lession01.swift */; };
+		9A65A6782781FC0200A2096C /* Day07.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A6772781FC0200A2096C /* Day07.swift */; };
 		F90E9984277D499C003E770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9983277D499C003E770F /* AppDelegate.swift */; };
 		F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9985277D499C003E770F /* SceneDelegate.swift */; };
 		F90E9988277D499C003E770F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9987277D499C003E770F /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* Begin PBXFileReference section */
 		9A65A66E2780754200A2096C /* Day05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day05.swift; sourceTree = "<group>"; };
 		9A65A67027807A8B00A2096C /* Day06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day06.swift; sourceTree = "<group>"; };
+		9A65A6752781F5E000A2096C /* Lession01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lession01.swift; sourceTree = "<group>"; };
+		9A65A6772781FC0200A2096C /* Day07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day07.swift; sourceTree = "<group>"; };
 		F90E9980277D499C003E770F /* JKHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E9983277D499C003E770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90E9985277D499C003E770F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A65A6722781F5AB00A2096C /* Lession */ = {
+			isa = PBXGroup;
+			children = (
+				9A65A6752781F5E000A2096C /* Lession01.swift */,
+			);
+			path = Lession;
+			sourceTree = "<group>";
+		};
 		F90E9977277D499C003E770F = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +87,7 @@
 				F90E9983277D499C003E770F /* AppDelegate.swift */,
 				F90E9985277D499C003E770F /* SceneDelegate.swift */,
 				F90E9987277D499C003E770F /* ViewController.swift */,
+				9A65A6722781F5AB00A2096C /* Lession */,
 				F9BF1F63277D4D5500D4DB1F /* Weekly */,
 				F9BF1F62277D4D4500D4DB1F /* Daily */,
 				F9BF1F57277D4B7500D4DB1F /* Model */,
@@ -103,6 +116,7 @@
 				F9BF1F64277D4FB800D4DB1F /* Day04.swift */,
 				9A65A66E2780754200A2096C /* Day05.swift */,
 				9A65A67027807A8B00A2096C /* Day06.swift */,
+				9A65A6772781FC0200A2096C /* Day07.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -185,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A65A6782781FC0200A2096C /* Day07.swift in Sources */,
+				9A65A6762781F5E000A2096C /* Lession01.swift in Sources */,
 				F90E9988277D499C003E770F /* ViewController.swift in Sources */,
 				F9BF1F5D277D4D2E00D4DB1F /* Day02.swift in Sources */,
 				F9BF1F61277D4D3100D4DB1F /* Week01.swift in Sources */,

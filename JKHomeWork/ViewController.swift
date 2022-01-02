@@ -25,7 +25,9 @@ class ViewController: UIViewController {
         
 //        mergeTwoLinkList()
         
-        myCircularDeque()
+//        myCircularDeque()
+        
+        minStack()
     }
 
     
@@ -58,6 +60,11 @@ class ViewController: UIViewController {
     func myCircularDeque() {
         MyCircularDeque.test()
     }
-
+    
+    func minStack() {
+        let m = MinStack()
+        m.test()
+    }
+    
 }
 
