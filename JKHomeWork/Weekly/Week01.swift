@@ -15,7 +15,7 @@ import Foundation
  你可以假设除了整数 0 之外，这个整数不会以零开头。
  */
 class PlusOne {
-   
+    
     func plusOne(_ digits: [Int]) -> [Int] {
         var resArr: [Int] = []
         // 倒序
@@ -32,7 +32,7 @@ class PlusOne {
                 index += 1
             }
         }
-      
+        
         // 补全剩下数据
         for (i, item) in list.enumerated() {
             if (i > index) {
@@ -44,23 +44,23 @@ class PlusOne {
         if index > list.count - 1 {
             resArr.append(1)
         }
-
+        
         // 数组再倒叙
         return resArr.reversed()
     }
-
+    
     // test case
     func test() {
         let res = plusOne([7,8,9]);
         print(res)
-
+        
         let res1 = plusOne([9,9,9]);
         print(res1)
-
+        
         let res2 = plusOne([9,8,7]);
         print(res2)
     }
-
+    
 }
 
 
@@ -128,7 +128,7 @@ class MergeTwoLinkList {
         }
         return head
     }
-
+    
     func printAllNode(l: ListNode?) {
         var nodel = l
         while nodel != nil {
@@ -136,21 +136,21 @@ class MergeTwoLinkList {
             nodel = nodel!.next
         }
     }
-     
+    
     func test() {
-//        let a = [1,2,4]
-//        let b = [1,3,4]
-//        let a: [Int] = []
-//        let b = [0]
-//        let a = [2]
-//        let b = [1]
+        //        let a = [1,2,4]
+        //        let b = [1,3,4]
+        //        let a: [Int] = []
+        //        let b = [0]
+        //        let a = [2]
+        //        let b = [1]
         let a = [-9, 3]
         let b = [5, 7]
         let list1 = creatNodeListWithArray(a).next
         let list2 = creatNodeListWithArray(b).next
         let l = mergeTwoLists(list1, list2)
-    //    printAllNode(l: list1)
-    //    printAllNode(l: list2)
+        //    printAllNode(l: list1)
+        //    printAllNode(l: list2)
         printAllNode(l: l)
     }
     
@@ -171,7 +171,7 @@ class MergeTwoLinkList {
  getRear()：获得双端队列的最后一个元素。 如果双端队列为空，返回 -1。
  isEmpty()：检查双端队列是否为空。
  isFull()：检查双端队列是否满了。
-
+ 
  */
 
 class MyCircularDeque {
@@ -180,7 +180,6 @@ class MyCircularDeque {
     
     var list: [Int] = []
     
-
     init(_ k: Int) {
         capacity = k
     }
@@ -200,7 +199,6 @@ class MyCircularDeque {
         list.append(value)
         return true
     }
-    
     
     func deleteFront() -> Bool {
         if list.isEmpty {
