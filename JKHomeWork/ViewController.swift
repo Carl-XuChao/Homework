@@ -27,7 +27,9 @@ class ViewController: UIViewController {
         
         //        myCircularDeque()
         
-        minStack()
+//        minStack()
+        
+        twoSum()
     }
     
     
@@ -65,6 +67,12 @@ class ViewController: UIViewController {
         let m = MinStack()
         m.test()
     }
+    
+    func twoSum() {
+        let m = TwoSum()
+        m.test()
+    }
+    
     
 }
 
