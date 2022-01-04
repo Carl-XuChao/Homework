@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-                mergeSortedArray()
+//                mergeSortedArray()
         //
         //        revertLinkNode()
         
@@ -30,6 +30,14 @@ class ViewController: UIViewController {
 //        minStack()
         
 //        twoSum()
+        
+        groupAnagrams()
+        
+    }
+    
+    func groupAnagrams()  {
+        let g = GroupAnagrams()
+        g.test()
     }
     
     
