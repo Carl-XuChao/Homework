@@ -51,7 +51,10 @@ class MergeSortedArray {
     func test()  {
         var a: [Int] = [1,3,6,0,0,0]
         let b: [Int] = [2,4,5]
-        merge(&a, 3, b, b.count)
+        print(a)
+        print(b)
+        print("---------------")
+        merge2(&a, 3, b, b.count)
         print(a)
     }
     
@@ -82,10 +85,45 @@ class MergeSortedArray {
     func test1()  {
         var a1: [Int] = [1,2,3,0,0,0]
         let b1: [Int] = [2,4,5]
-        merge1(&a1, 3, b1, b1.count)
+        print(a1)
+        print(b1)
+        print("---------------")
+        merge2(&a1, 3, b1, b1.count)
         print(a1)
     }
     
     
 }
 
+
+/// 优化方法
+extension MergeSortedArray {
+    
+    func merge2(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
+        var i = m + n - 1
+        var num1Index = m - 1
+        var num2Index = n - 1
+        // 遍历完num1的数组
+        while num1Index >= 0 {
+            // 遇到num2比num1对应位置数据大的情况就赋值，直到小于num1, 再移动num1的下表
+            while num2Index >= 0 {
+                if (nums1[num1Index] < nums2[num2Index]) {
+                    nums1[i] = nums2[num2Index]
+                    num2Index -= 1
+                    i -= 1
+                } else {
+                    nums1[i] = nums1[num1Index]
+                    i -= 1
+                    break
+                }
+            }
+            num1Index -= 1
+        }
+        //  如果num2数组还有剩余，要重赋值， 如果num1数组还有剩余，不需要重新赋值。
+        while num2Index >= 0 {
+            nums1[num2Index] = nums2[num2Index]
+            num2Index -= 1
+        }
+    }
+    
+}
