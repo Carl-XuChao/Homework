@@ -31,7 +31,9 @@ class ViewController: UIViewController {
         
 //        twoSum()
         
-        groupAnagrams()
+//        groupAnagrams()
+        
+        lRUCache()
         
     }
     
@@ -79,6 +81,10 @@ class ViewController: UIViewController {
     func twoSum() {
         let m = TwoSum()
         m.test()
+    }
+    
+    func lRUCache() {
+        LRUCache.test()
     }
     
     
