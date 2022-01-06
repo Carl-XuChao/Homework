@@ -33,9 +33,18 @@ class ViewController: UIViewController {
         
 //        groupAnagrams()
         
-        lRUCache()
+//        lRUCache()
+        
+        numMatrix()
         
     }
+    
+    func numMatrix()  {
+        let n = NumMatrix([])
+        n.test()
+    }
+    
+    
     
     func groupAnagrams()  {
         let g = GroupAnagrams()
