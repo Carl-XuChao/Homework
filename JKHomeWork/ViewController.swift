@@ -35,9 +35,19 @@ class ViewController: UIViewController {
         
 //        lRUCache()
         
-        numMatrix()
+//        numMatrix()
+        
+        maxSubArray()
         
     }
+    
+    
+    
+    func maxSubArray()  {
+        let n = MaxSubArray()
+        n.test()
+    }
+    
     
     func numMatrix()  {
         let n = NumMatrix([])
