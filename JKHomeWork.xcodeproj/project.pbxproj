@@ -16,6 +16,7 @@
 		9A65A67E27834C5100A2096C /* Week02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A67D27834C5100A2096C /* Week02.swift */; };
 		9A65A6802785DCA900A2096C /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A67F2785DCA900A2096C /* Day10.swift */; };
 		9A9C4E3E2787356C00F0071D /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E3D2787356B00F0071D /* Day11.swift */; };
+		9A9C4E4027892B6F00F0071D /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E3F27892B6F00F0071D /* Day13.swift */; };
 		F1E060E12787F12300B2D5CC /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E060E02787F12300B2D5CC /* Day12.swift */; };
 		F90E9984277D499C003E770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9983277D499C003E770F /* AppDelegate.swift */; };
 		F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9985277D499C003E770F /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 		9A65A67D27834C5100A2096C /* Week02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week02.swift; sourceTree = "<group>"; };
 		9A65A67F2785DCA900A2096C /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		9A9C4E3D2787356B00F0071D /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
+		9A9C4E3F27892B6F00F0071D /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		F1E060E02787F12300B2D5CC /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
 		F90E9980277D499C003E770F /* JKHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E9983277D499C003E770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				9A65A67F2785DCA900A2096C /* Day10.swift */,
 				9A9C4E3D2787356B00F0071D /* Day11.swift */,
 				F1E060E02787F12300B2D5CC /* Day12.swift */,
+				9A9C4E3F27892B6F00F0071D /* Day13.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				9A65A67A27821B5B00A2096C /* Lession02.swift in Sources */,
 				F9B7E7C22784095000359A46 /* Day09.swift in Sources */,
+				9A9C4E4027892B6F00F0071D /* Day13.swift in Sources */,
 				9A65A6782781FC0200A2096C /* Day07.swift in Sources */,
 				9A65A6762781F5E000A2096C /* Lession01.swift in Sources */,
 				F90E9988277D499C003E770F /* ViewController.swift in Sources */,

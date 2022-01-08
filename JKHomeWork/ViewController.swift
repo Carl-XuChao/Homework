@@ -37,12 +37,12 @@ class ViewController: UIViewController {
         
 //        numMatrix()
         
-        maxSubArray()
+//        maxSubArray()
         
+        ThreeSum.test()
     }
     
-    
-    
+   
     func maxSubArray()  {
         let n = MaxSubArray()
         n.test()
