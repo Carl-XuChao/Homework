@@ -39,9 +39,33 @@ class ViewController: UIViewController {
         
 //        maxSubArray()
         
-        ThreeSum.test()
+//        ThreeSum.test()
+        
+        
+//        subdomainVisits()
+        
+        findShortestSubArray()
     }
     
+    
+//
+    
+    
+    func subdomainVisits() {
+        let w = WeekTwo()
+        let cpdomains = ["9001 discuss.leetcode.com"]
+        let list = w.subdomainVisits(cpdomains)
+        print("list: \(list)")
+    }
+    
+    
+    func findShortestSubArray() {
+        let w = WeekTwo()
+//        let nums = [1,2,2,3,1]
+        let nums = [1,2,2,3,1,4,2]
+        let list = w.findShortestSubArray(nums)
+        print("list: \(list)")
+    }
    
     func maxSubArray()  {
         let n = MaxSubArray()
