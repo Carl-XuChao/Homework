@@ -79,7 +79,7 @@ class WeekTwo {
     /* 560. 和为 K 的子数组
      https://leetcode-cn.com/problems/subarray-sum-equals-k/
      */
-    func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+    func subarraySum1(_ nums: [Int], _ k: Int) -> Int {
         var preSumArray: [Int] = [0]
         // 前缀和， 注意补0
         var sum = 0
@@ -88,16 +88,36 @@ class WeekTwo {
             preSumArray.append(sum)
         }
         var count = 0
-
+        // pre[i]−pre[j−1]==k  就是从j到i的区间和
         for i in 0..<preSumArray.count {
-            for j in i+1..<preSumArray.count {
-                if preSumArray[j] - preSumArray[i] == k {
+            for j in 0..<i {
+                if preSumArray[i] - preSumArray[j] == k {
                     count += 1
                 }
             }
         }
+        
         return count
     }
+    
+    func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+        // 前缀和
+        var prefixSum: Int = 0
+        // 当前位置的前缀和
+        var count = 0
+        // 前缀和值：次数
+        var map: [Int: Int] = [0:1]
+        // pre[i]−pre[j−1]==k  && j < i
+        for i in 0..<nums.count {
+            prefixSum += nums[i]
+            if map[prefixSum - k] != nil {
+                count += map[prefixSum - k]!
+            }
+            map[prefixSum] =  (map[prefixSum] ?? 0) + 1
+        }
+        return count
+    }
+    
     
     
     /* 1074. 元素和为目标值的子矩阵数量

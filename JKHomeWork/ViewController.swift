@@ -66,6 +66,8 @@ class ViewController: UIViewController {
         let k = 0
         let res = w.subarraySum(nums, k)
         print("res: \(res)")
+        let res1 = w.subarraySum1(nums, k)
+        print("res1: \(res1)")
     }
     
     
