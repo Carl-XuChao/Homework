@@ -16,6 +16,7 @@ import Foundation
  */
 class PlusOne {
     
+    // 方法一： 倒序， 进位， 再倒叙
     func plusOne(_ digits: [Int]) -> [Int] {
         var resArr: [Int] = []
         // 倒序
@@ -49,6 +50,34 @@ class PlusOne {
         return resArr.reversed()
     }
     
+    
+    // 方法二： 直接倒叙遍历
+    func plusOne1(_ digits: [Int]) -> [Int] {
+        // 进位标志位
+        var deta = 0
+        var nums = digits
+        var i = digits.count - 1
+        // 直接倒叙遍历
+        while i >= 0 {
+            if i == digits.count - 1 {
+                nums[i] += 1 + deta
+            } else {
+                nums[i] += deta
+            }
+            // 是否需要进位等于除以10
+            deta = nums[i] / 10
+            // 当前位的值等于对10取余
+            nums[i] = nums[i] % 10
+            i -= 1
+        }
+        // 如果大于0， 需要补1
+        if deta > 0 {
+            nums.insert(deta, at: 0)
+        }
+        return nums
+    }
+    
+    
     // test case
     func test() {
         let res = plusOne([7,8,9]);
@@ -73,6 +102,7 @@ class PlusOne {
  */
 class MergeTwoLinkList {
     
+    //方法一：  遍历， 比较大小， 进行插入
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
         var curNodeOne = list1
         var curNodeTwo = list2
@@ -174,6 +204,7 @@ class MergeTwoLinkList {
  
  */
 
+// 数组实现双端队列
 class MyCircularDeque {
     
     var capacity = 0
@@ -252,6 +283,105 @@ class MyCircularDeque {
     }
 }
 
+
+// 双向链表实现双端队列
+class LinkNodeCircularDeque {
+    
+    class Node {
+        var pre: Node?
+        var next: Node?
+        var data: Int
+        
+        init(_ data: Int) {
+            self.data = data
+        }
+    }
+    
+    var capacity = 0
+    var size = 0
+    
+    var head = Node(-1)
+    var tail = Node(-1)
+    
+    init(_ k: Int) {
+        capacity = k
+        self.head.next = self.tail
+        self.tail.pre = self.head
+    }
+    
+    func insertFront(_ value: Int) -> Bool {
+        if isFull() {
+            return false
+        }
+        let node = Node(value)
+        let nodeNext = head.next
+        head.next = node
+        node.next = nodeNext
+        nodeNext?.pre  = node
+        node.pre = head
+        size += 1
+        return true
+    }
+    
+    func insertLast(_ value: Int) -> Bool {
+        if isFull() {
+            return false
+        }
+        let node = Node(value)
+        let preNode = tail.pre
+        preNode?.next = node
+        node.next = tail
+        tail.pre = node
+        node.pre = preNode
+        size += 1
+        return true
+    }
+    
+    func deleteFront() -> Bool {
+        if isEmpty() {
+            return false
+        }
+        let node = head.next
+        head.next = node?.next
+        node?.next?.pre = head
+        size -= 1
+        return true
+    }
+    
+    func deleteLast() -> Bool {
+        if isEmpty()  {
+            return false
+        }
+        let node = tail.pre
+        tail.pre = node?.pre
+        node?.pre?.next = tail
+        size -= 1
+        return true
+    }
+    
+    func getFront() -> Int {
+        if isEmpty()  {
+            return -1
+        }
+        return head.next!.data
+    }
+    
+    func getRear() -> Int {
+        if isEmpty()  {
+            return -1
+        }
+        return tail.pre!.data
+    }
+    
+    func isEmpty() -> Bool {
+        return size == 0
+    }
+    
+    func isFull() -> Bool {
+        return size == capacity
+    }
+    
+}
 
 
 /*。85. 最大矩形
