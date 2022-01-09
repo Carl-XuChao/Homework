@@ -46,7 +46,9 @@ class ViewController: UIViewController {
         
 //        findShortestSubArray()
         
-        subarraySum()
+//        subarraySum()
+        
+        MaxArea.test()
     }
     
     
