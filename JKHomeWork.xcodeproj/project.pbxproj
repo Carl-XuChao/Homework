@@ -17,6 +17,7 @@
 		9A65A6802785DCA900A2096C /* Day10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A65A67F2785DCA900A2096C /* Day10.swift */; };
 		9A9C4E3E2787356C00F0071D /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E3D2787356B00F0071D /* Day11.swift */; };
 		9A9C4E4027892B6F00F0071D /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E3F27892B6F00F0071D /* Day13.swift */; };
+		9A9C4E42278A8F4200F0071D /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E41278A8F4200F0071D /* Day14.swift */; };
 		F1E060E12787F12300B2D5CC /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E060E02787F12300B2D5CC /* Day12.swift */; };
 		F90E9984277D499C003E770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9983277D499C003E770F /* AppDelegate.swift */; };
 		F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9985277D499C003E770F /* SceneDelegate.swift */; };
@@ -44,6 +45,7 @@
 		9A65A67F2785DCA900A2096C /* Day10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day10.swift; sourceTree = "<group>"; };
 		9A9C4E3D2787356B00F0071D /* Day11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day11.swift; sourceTree = "<group>"; };
 		9A9C4E3F27892B6F00F0071D /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
+		9A9C4E41278A8F4200F0071D /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		F1E060E02787F12300B2D5CC /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
 		F90E9980277D499C003E770F /* JKHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E9983277D499C003E770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				9A9C4E3D2787356B00F0071D /* Day11.swift */,
 				F1E060E02787F12300B2D5CC /* Day12.swift */,
 				9A9C4E3F27892B6F00F0071D /* Day13.swift */,
+				9A9C4E41278A8F4200F0071D /* Day14.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				F9BF1F61277D4D3100D4DB1F /* Week01.swift in Sources */,
 				F9BF1F5E277D4D2E00D4DB1F /* Day01.swift in Sources */,
 				F91A9FD0277D4A180095B0E1 /* LinkNode.swift in Sources */,
+				9A9C4E42278A8F4200F0071D /* Day14.swift in Sources */,
 				F1E060E12787F12300B2D5CC /* Day12.swift in Sources */,
 				9A65A67C2782DA7700A2096C /* Day08.swift in Sources */,
 				9A65A6802785DCA900A2096C /* Day10.swift in Sources */,

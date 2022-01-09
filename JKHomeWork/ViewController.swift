@@ -44,11 +44,29 @@ class ViewController: UIViewController {
         
 //        subdomainVisits()
         
-        findShortestSubArray()
+//        findShortestSubArray()
+        
+        subarraySum()
     }
     
     
 //
+    
+    
+    
+    func subarraySum() {
+        let w = WeekTwo()
+//        let nums = [1,1,1]
+//        let k = 2
+//        let nums = [1,2,3]
+//        let k = 3
+//        let nums = [1]
+//        let k = 0
+        let nums = [1,-1,0]
+        let k = 0
+        let res = w.subarraySum(nums, k)
+        print("res: \(res)")
+    }
     
     
     func subdomainVisits() {

@@ -73,18 +73,38 @@ class WeekTwo {
         return ans
     }
     
-    /* 1074. 元素和为目标值的子矩阵数量
-     https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target/
-     */
-    func numSubmatrixSumTarget(_ matrix: [[Int]], _ target: Int) -> Int {
-        return 0
-    }
+
     
     
     /* 560. 和为 K 的子数组
      https://leetcode-cn.com/problems/subarray-sum-equals-k/
      */
     func subarraySum(_ nums: [Int], _ k: Int) -> Int {
+        var preSumArray: [Int] = [0]
+        // 前缀和， 注意补0
+        var sum = 0
+        for item in nums {
+            sum += item
+            preSumArray.append(sum)
+        }
+        var count = 0
+
+        for i in 0..<preSumArray.count {
+            for j in i+1..<preSumArray.count {
+                if preSumArray[j] - preSumArray[i] == k {
+                    count += 1
+                }
+            }
+        }
+        return count
+    }
+    
+    
+    /* 1074. 元素和为目标值的子矩阵数量
+     https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target/
+     */
+    func numSubmatrixSumTarget(_ matrix: [[Int]], _ target: Int) -> Int {
+        
         return 0
     }
 }
