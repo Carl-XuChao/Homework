@@ -48,7 +48,9 @@ class ViewController: UIViewController {
         
 //        subarraySum()
         
-        MaxArea.test()
+//        MaxArea.test()
+        
+        Subsets.test()
     }
     
     
