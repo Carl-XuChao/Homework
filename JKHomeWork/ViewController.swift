@@ -50,7 +50,9 @@ class ViewController: UIViewController {
         
 //        MaxArea.test()
         
-        Subsets.test()
+//        Subsets.test()
+        
+        Combine.test()
     }
     
     
