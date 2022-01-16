@@ -52,7 +52,9 @@ class ViewController: UIViewController {
         
 //        Subsets.test()
         
-        Combine.test()
+//        Combine.test()
+        
+        Parenthesis.test()
     }
     
     
