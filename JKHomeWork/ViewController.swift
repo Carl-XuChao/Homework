@@ -54,7 +54,9 @@ class ViewController: UIViewController {
         
 //        Combine.test()
         
-        Parenthesis.test()
+//        Parenthesis.test()
+        
+        WeekThree.test()
     }
     
     
