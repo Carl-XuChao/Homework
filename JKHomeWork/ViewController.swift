@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         
 //        Parenthesis.test()
         
-        WeekThree.test()
+        WeekThree.testMergeKLists()
     }
     
     

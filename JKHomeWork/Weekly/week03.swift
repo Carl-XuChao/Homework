@@ -20,11 +20,18 @@ class WeekThree {
 ///  合并K个升序链表
 extension WeekThree {
     
+    
     func mergeKLists(_ lists: [ListNode?]) -> ListNode? {
-        if lists.count == 0 {
+        var array: [ListNode] = []
+        for item in lists {
+            if let a = item {
+                array.append(a)
+            }
+        }
+        if array.count == 0 {
             return nil
         }
-        let res = dfs(lists, start: 0, end: lists.count - 1)
+        let res = dfs(array, start: 0, end: array.count - 1)
         return res
     }
     
@@ -36,13 +43,12 @@ extension WeekThree {
         let mid = (start + (end - start)) / 2
         let leftList = dfs(lists, start: start, end: mid)
         let rightList = dfs(lists, start: mid + 1, end: end)
-        let res = mergeTwoLinkLists(leftList, rightList)
-        return res
+        return mergeTwoLists(leftList, rightList)
     }
     
-    private func mergeTwoLinkLists(_ left: ListNode?, _ right: ListNode?) -> ListNode? {
-        var l = left
-        var r = right
+    func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+        var l = l1
+        var r = l2
         if l == nil {
             return r
         }
@@ -69,6 +75,32 @@ extension WeekThree {
         }
         return dummy.next
     }
+    
+    
+    static func createList(arr: [Int]) -> ListNode? {
+        let link = ListNode()
+        var head = link
+        arr.forEach { item in
+            let currentNode = ListNode(val: item, next: nil)
+            head.next = currentNode
+            head = currentNode
+        }
+        return link.next
+    }
+    
+    
+    static func testMergeKLists() {
+        let array = [[],[-1,5,11],[],[6,10]]
+        var data: [ListNode?] = []
+        for item in array {
+            let b = WeekThree.createList(arr: item)
+            data.append(b)
+        }
+        
+        let obj = WeekThree()
+        obj.mergeKLists(data)
+    }
+    
     
 }
 
