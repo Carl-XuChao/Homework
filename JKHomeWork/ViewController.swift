@@ -58,16 +58,8 @@ class ViewController: UIViewController {
         
 //        WeekThree.testMergeKLists()
         
-//        Day22.test()
-        let a = Character("a").asciiValue
+//        Day24.test()
         
-        let str = "abcdefg"
-        let arr = str.map{ $0 }
-        
-        let digits = "23"
-        let digitsArray = digits.split(separator: " ")
-        let item = digitsArray[0]
-        print("a:  \(a)")
     }
     
     
