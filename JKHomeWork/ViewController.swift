@@ -60,6 +60,10 @@ class ViewController: UIViewController {
         
 //        Day24.test()
         
+//        Solution.test()
+        
+//        Solution1.test()
+        
     }
     
     

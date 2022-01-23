@@ -27,6 +27,11 @@
 		9A9C4E502795CEEC00F0071D /* Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E4F2795CEEC00F0071D /* Day22.swift */; };
 		9A9C4E522797038900F0071D /* Day23.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E512797038900F0071D /* Day23.swift */; };
 		9A9C4E5427984EFF00F0071D /* Day24.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E5327984EFF00F0071D /* Day24.swift */; };
+		9A9C4E562799AF7500F0071D /* Day25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E552799AF7500F0071D /* Day25.swift */; };
+		9A9C4E582799C84700F0071D /* Day26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E572799C84700F0071D /* Day26.swift */; };
+		9AC48BCD279C697E004ED474 /* Lession04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC48BCC279C697E004ED474 /* Lession04.swift */; };
+		9AFC86F3279B9FF0007DF280 /* Day27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC86F2279B9FF0007DF280 /* Day27.swift */; };
+		9AFC86F5279BF04B007DF280 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC86F4279BF04B007DF280 /* Heap.swift */; };
 		F1A8FE8B278D582F00524763 /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8FE8A278D582F00524763 /* Day16.swift */; };
 		F1E060E12787F12300B2D5CC /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E060E02787F12300B2D5CC /* Day12.swift */; };
 		F1F1F818278BE96A007021D8 /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1F817278BE96A007021D8 /* Day15.swift */; };
@@ -66,6 +71,11 @@
 		9A9C4E4F2795CEEC00F0071D /* Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day22.swift; sourceTree = "<group>"; };
 		9A9C4E512797038900F0071D /* Day23.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day23.swift; sourceTree = "<group>"; };
 		9A9C4E5327984EFF00F0071D /* Day24.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day24.swift; sourceTree = "<group>"; };
+		9A9C4E552799AF7500F0071D /* Day25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day25.swift; sourceTree = "<group>"; };
+		9A9C4E572799C84700F0071D /* Day26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day26.swift; sourceTree = "<group>"; };
+		9AC48BCC279C697E004ED474 /* Lession04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lession04.swift; sourceTree = "<group>"; };
+		9AFC86F2279B9FF0007DF280 /* Day27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day27.swift; sourceTree = "<group>"; };
+		9AFC86F4279BF04B007DF280 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		F1A8FE8A278D582F00524763 /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
 		F1E060E02787F12300B2D5CC /* Day12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day12.swift; sourceTree = "<group>"; };
 		F1F1F817278BE96A007021D8 /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
@@ -102,6 +112,8 @@
 			children = (
 				9A65A6752781F5E000A2096C /* Lession01.swift */,
 				9A65A67927821B5B00A2096C /* Lession02.swift */,
+				9AFC86F4279BF04B007DF280 /* Heap.swift */,
+				9AC48BCC279C697E004ED474 /* Lession04.swift */,
 			);
 			path = Lession;
 			sourceTree = "<group>";
@@ -175,6 +187,9 @@
 				9A9C4E4F2795CEEC00F0071D /* Day22.swift */,
 				9A9C4E512797038900F0071D /* Day23.swift */,
 				9A9C4E5327984EFF00F0071D /* Day24.swift */,
+				9A9C4E552799AF7500F0071D /* Day25.swift */,
+				9A9C4E572799C84700F0071D /* Day26.swift */,
+				9AFC86F2279B9FF0007DF280 /* Day27.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -260,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A65A67A27821B5B00A2096C /* Lession02.swift in Sources */,
+				9AFC86F3279B9FF0007DF280 /* Day27.swift in Sources */,
 				9A9C4E5427984EFF00F0071D /* Day24.swift in Sources */,
 				F9B7E7C22784095000359A46 /* Day09.swift in Sources */,
 				9A9C4E4027892B6F00F0071D /* Day13.swift in Sources */,
@@ -268,21 +284,25 @@
 				F90E9988277D499C003E770F /* ViewController.swift in Sources */,
 				F9BF1F5D277D4D2E00D4DB1F /* Day02.swift in Sources */,
 				9A65A67E27834C5100A2096C /* Week02.swift in Sources */,
+				9A9C4E562799AF7500F0071D /* Day25.swift in Sources */,
 				F9BF1F61277D4D3100D4DB1F /* Week01.swift in Sources */,
 				9A9C4E522797038900F0071D /* Day23.swift in Sources */,
 				F9BF1F5E277D4D2E00D4DB1F /* Day01.swift in Sources */,
 				F91A9FD0277D4A180095B0E1 /* LinkNode.swift in Sources */,
 				9A9C4E4E2795AC2100F0071D /* Day21.swift in Sources */,
+				9AFC86F5279BF04B007DF280 /* Heap.swift in Sources */,
 				F1A8FE8B278D582F00524763 /* Day16.swift in Sources */,
 				9A9C4E42278A8F4200F0071D /* Day14.swift in Sources */,
 				9A9C4E48279309F100F0071D /* Day19.swift in Sources */,
 				F1E060E12787F12300B2D5CC /* Day12.swift in Sources */,
 				9A65A67C2782DA7700A2096C /* Day08.swift in Sources */,
 				9A9C4E462790749200F0071D /* Day18.swift in Sources */,
+				9AC48BCD279C697E004ED474 /* Lession04.swift in Sources */,
 				9A65A6802785DCA900A2096C /* Day10.swift in Sources */,
 				9A9C4E4A279309F700F0071D /* Day20.swift in Sources */,
 				9A65A66F2780754200A2096C /* Day05.swift in Sources */,
 				F90E9984277D499C003E770F /* AppDelegate.swift in Sources */,
+				9A9C4E582799C84700F0071D /* Day26.swift in Sources */,
 				9A9C4E4C27945B8000F0071D /* week03.swift in Sources */,
 				9A9C4E3E2787356C00F0071D /* Day11.swift in Sources */,
 				F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */,
