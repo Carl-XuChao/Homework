@@ -64,6 +64,7 @@ class ViewController: UIViewController {
         
 //        Solution1.test()
         
+        Solution3.test()
     }
     
     

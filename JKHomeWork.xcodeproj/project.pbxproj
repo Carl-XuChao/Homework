@@ -30,6 +30,7 @@
 		9A9C4E562799AF7500F0071D /* Day25.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E552799AF7500F0071D /* Day25.swift */; };
 		9A9C4E582799C84700F0071D /* Day26.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C4E572799C84700F0071D /* Day26.swift */; };
 		9AC48BCD279C697E004ED474 /* Lession04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC48BCC279C697E004ED474 /* Lession04.swift */; };
+		9AC48BCF279CF683004ED474 /* Week04.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC48BCE279CF683004ED474 /* Week04.swift */; };
 		9AFC86F3279B9FF0007DF280 /* Day27.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC86F2279B9FF0007DF280 /* Day27.swift */; };
 		9AFC86F5279BF04B007DF280 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC86F4279BF04B007DF280 /* Heap.swift */; };
 		F1A8FE8B278D582F00524763 /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A8FE8A278D582F00524763 /* Day16.swift */; };
@@ -74,6 +75,7 @@
 		9A9C4E552799AF7500F0071D /* Day25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day25.swift; sourceTree = "<group>"; };
 		9A9C4E572799C84700F0071D /* Day26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day26.swift; sourceTree = "<group>"; };
 		9AC48BCC279C697E004ED474 /* Lession04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lession04.swift; sourceTree = "<group>"; };
+		9AC48BCE279CF683004ED474 /* Week04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week04.swift; sourceTree = "<group>"; };
 		9AFC86F2279B9FF0007DF280 /* Day27.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day27.swift; sourceTree = "<group>"; };
 		9AFC86F4279BF04B007DF280 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		F1A8FE8A278D582F00524763 /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				F9BF1F60277D4D3100D4DB1F /* Week01.swift */,
 				9A65A67D27834C5100A2096C /* Week02.swift */,
 				9A9C4E4B27945B8000F0071D /* week03.swift */,
+				9AC48BCE279CF683004ED474 /* Week04.swift */,
 			);
 			path = Weekly;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				9A65A6762781F5E000A2096C /* Lession01.swift in Sources */,
 				F90E9988277D499C003E770F /* ViewController.swift in Sources */,
 				F9BF1F5D277D4D2E00D4DB1F /* Day02.swift in Sources */,
+				9AC48BCF279CF683004ED474 /* Week04.swift in Sources */,
 				9A65A67E27834C5100A2096C /* Week02.swift in Sources */,
 				9A9C4E562799AF7500F0071D /* Day25.swift in Sources */,
 				F9BF1F61277D4D3100D4DB1F /* Week01.swift in Sources */,
