@@ -160,17 +160,17 @@ class Twitter {
     }
     
     func postTweet(_ userId: Int, _ tweetId: Int) {
-        order += 1
-        let msg = Message(userId, tweetId, order)
-        if articleList[userId] != nil {
-            articleList[userId]
-        }
-        articleList.insert([userId: msg], at: 0)
+//        order += 1
+//        let msg = Message(userId, tweetId, order)
+//        if articleList[userId] != nil {
+//            articleList[userId]
+//        }
+//        articleList.insert([userId: msg], at: 0)
     }
     
     func getNewsFeed(_ userId: Int) -> [Int] {
-        let focusUserId = followList[userId] ?? []
-        var count = 0
+//        let focusUserId = followList[userId] ?? []
+//        var count = 0
         var ans: [Int] = []
 //        for item in articleList {
 //            if count == 10 {
@@ -231,7 +231,7 @@ class Solution4 {
          bsf(root!.right)
          root!.val += sum
          sum = root!.val
-        bsf(root!.left)
+         bsf(root!.left)
     }
 
 }
