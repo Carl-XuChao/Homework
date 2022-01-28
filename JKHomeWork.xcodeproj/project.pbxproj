@@ -41,6 +41,7 @@
 		F1F7960627A40F78004A0CD2 /* Day30.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960527A40F78004A0CD2 /* Day30.swift */; };
 		F1F7960827A40FAF004A0CD2 /* Day31.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960727A40FAF004A0CD2 /* Day31.swift */; };
 		F1F7960A27A41038004A0CD2 /* Day32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960927A41038004A0CD2 /* Day32.swift */; };
+		F1F7960C27A41ECA004A0CD2 /* Day33.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960B27A41ECA004A0CD2 /* Day33.swift */; };
 		F90E9984277D499C003E770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9983277D499C003E770F /* AppDelegate.swift */; };
 		F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9985277D499C003E770F /* SceneDelegate.swift */; };
 		F90E9988277D499C003E770F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9987277D499C003E770F /* ViewController.swift */; };
@@ -91,6 +92,7 @@
 		F1F7960527A40F78004A0CD2 /* Day30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day30.swift; sourceTree = "<group>"; };
 		F1F7960727A40FAF004A0CD2 /* Day31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day31.swift; sourceTree = "<group>"; };
 		F1F7960927A41038004A0CD2 /* Day32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32.swift; sourceTree = "<group>"; };
+		F1F7960B27A41ECA004A0CD2 /* Day33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33.swift; sourceTree = "<group>"; };
 		F90E9980277D499C003E770F /* JKHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E9983277D499C003E770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90E9985277D499C003E770F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				F1F7960527A40F78004A0CD2 /* Day30.swift */,
 				F1F7960727A40FAF004A0CD2 /* Day31.swift */,
 				F1F7960927A41038004A0CD2 /* Day32.swift */,
+				F1F7960B27A41ECA004A0CD2 /* Day33.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				9A9C4E4E2795AC2100F0071D /* Day21.swift in Sources */,
 				9AFC86F5279BF04B007DF280 /* Heap.swift in Sources */,
 				F1F7960627A40F78004A0CD2 /* Day30.swift in Sources */,
+				F1F7960C27A41ECA004A0CD2 /* Day33.swift in Sources */,
 				F1A8FE8B278D582F00524763 /* Day16.swift in Sources */,
 				9A9C4E42278A8F4200F0071D /* Day14.swift in Sources */,
 				9A9C4E48279309F100F0071D /* Day19.swift in Sources */,
