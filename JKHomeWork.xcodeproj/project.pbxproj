@@ -42,6 +42,7 @@
 		F1F7960827A40FAF004A0CD2 /* Day31.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960727A40FAF004A0CD2 /* Day31.swift */; };
 		F1F7960A27A41038004A0CD2 /* Day32.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960927A41038004A0CD2 /* Day32.swift */; };
 		F1F7960C27A41ECA004A0CD2 /* Day33.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960B27A41ECA004A0CD2 /* Day33.swift */; };
+		F1F7960E27A57B83004A0CD2 /* Day34.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7960D27A57B83004A0CD2 /* Day34.swift */; };
 		F90E9984277D499C003E770F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9983277D499C003E770F /* AppDelegate.swift */; };
 		F90E9986277D499C003E770F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9985277D499C003E770F /* SceneDelegate.swift */; };
 		F90E9988277D499C003E770F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E9987277D499C003E770F /* ViewController.swift */; };
@@ -93,6 +94,7 @@
 		F1F7960727A40FAF004A0CD2 /* Day31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day31.swift; sourceTree = "<group>"; };
 		F1F7960927A41038004A0CD2 /* Day32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day32.swift; sourceTree = "<group>"; };
 		F1F7960B27A41ECA004A0CD2 /* Day33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day33.swift; sourceTree = "<group>"; };
+		F1F7960D27A57B83004A0CD2 /* Day34.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day34.swift; sourceTree = "<group>"; };
 		F90E9980277D499C003E770F /* JKHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90E9983277D499C003E770F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F90E9985277D499C003E770F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				F1F7960727A40FAF004A0CD2 /* Day31.swift */,
 				F1F7960927A41038004A0CD2 /* Day32.swift */,
 				F1F7960B27A41ECA004A0CD2 /* Day33.swift */,
+				F1F7960D27A57B83004A0CD2 /* Day34.swift */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				9A9C4E502795CEEC00F0071D /* Day22.swift in Sources */,
 				9A65A67127807A8B00A2096C /* Day06.swift in Sources */,
 				F9BF1F65277D4FB800D4DB1F /* Day04.swift in Sources */,
+				F1F7960E27A57B83004A0CD2 /* Day34.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
