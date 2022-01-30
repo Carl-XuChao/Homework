@@ -135,7 +135,15 @@ class WeekFive {
             }
         }
         
+
+        
         func q(_ t: Int) -> Int {
+            // return methodOne(t)
+            return methodTwo(t)
+        }
+
+        // 方法一： 直接遍历查找
+        func methodOne(_ t: Int) -> Int {
             var count = 0
             for i in times {
                 if t >= i {
@@ -146,17 +154,35 @@ class WeekFive {
             }
             return count > 1 ? maxPerson[count - 1] : persons[0]
         }
+
+        // 方法二； 二分查找
+        func methodTwo(_ t: Int) -> Int {
+            var left = 0
+            var right = self.times.count - 1
+            while left < right {
+                let mid = (left + right + 1) / 2
+                if times[mid] <= t {
+                    left = mid
+                } else {
+                    right = mid - 1
+                }
+            }
+            return maxPerson[left]
+        }
         
         
         static func test() {
-//            '[[[0,0,1,1,2],[0,67,69,74,87]],[4],[62],[100],[88],[70],[73],[22],[75],[29],[10]]
-
-//            let p = [0, 1, 1, 0, 0, 1, 0]
-//            let t = [0, 5, 10, 15, 20, 25, 30]
             let p = [0,0,1,1,2]
             let t = [0,67,69,74,87]
             let obj = TopVotedCandidate(p, t)
-            
+            let res = obj.q(100)
+            print("res: \(res)")
+        }
+        
+        static func testCase1() {
+            let p = [0, 1, 1, 0, 0, 1, 0]
+            let t = [0, 5, 10, 15, 20, 25, 30]
+            let obj = TopVotedCandidate(p, t)
             let res = obj.q(100)
             print("res: \(res)")
         }
