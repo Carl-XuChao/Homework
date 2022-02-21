@@ -69,6 +69,12 @@ class ViewController: UIViewController {
 //        Solution29.test()
         
 //        Solution34.test()
+        
+//        WeekFive.TopVotedCandidate.test()
+        
+//        Solution78.test()
+        
+        Solution111.test()
     }
     
     
